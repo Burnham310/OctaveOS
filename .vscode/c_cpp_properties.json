@@ -1,0 +1,22 @@
+{
+    "env": {
+        "myIncludePath": [
+            "${workspaceFolder}/include",
+            "${workspaceFolder}/components",
+            "${workspaceFolder}/raylib",
+            "${workspaceFolder}/kissfft"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "compilerPath": "/usr/bin/clang",
+            "includePath": [
+                "${myIncludePath}"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

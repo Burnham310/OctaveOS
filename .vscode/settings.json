@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "kiss_fft.h": "c",
+        "random": "c",
+        "raygui.h": "c",
+        "raylib.h": "c",
+        "assert.h": "c",
+        "state.h": "c",
+        "assets.h": "c",
+        "ui_main.h": "c",
+        "components.h": "c",
+        "utils.h": "c",
+        "stdio.h": "c",
+        "stdbool.h": "c",
+        "testcase.h": "c",
+        "stb_ds.h": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "variant": "c"
+    }
+}
