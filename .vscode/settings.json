@@ -21,6 +21,24 @@
         "tuple": "c",
         "type_traits": "c",
         "utility": "c",
-        "variant": "c"
+        "variant": "c",
+        "metalib.h": "c",
+        "sqlite3.h": "c",
+        "*.tcc": "c",
+        "bitset": "c",
+        "deque": "c",
+        "list": "c",
+        "string": "c",
+        "vector": "c",
+        "string_view": "c",
+        "algorithm": "c",
+        "istream": "c",
+        "limits": "c",
+        "numeric": "c",
+        "streambuf": "c",
+        "unistd.h": "c",
+        "tag_c.h": "c",
+        "dirent.h": "c",
+        "stat.h": "c"
     }
 }

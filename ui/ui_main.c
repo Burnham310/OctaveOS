@@ -16,7 +16,6 @@
 
 __attribute__((constructor(COMPONENT_LOADING_ORDER))) static void init()
 {
-    printf("asd\n");
     load_component("spectrogram");
 }
 

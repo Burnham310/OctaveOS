@@ -450,3 +450,4 @@ MigrationBackup/
 
 # other
 *.wav
+*.db

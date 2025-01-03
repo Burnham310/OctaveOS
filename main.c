@@ -5,6 +5,7 @@
 #include "assert.h"
 #include "assets.h"
 #include "state.h"
+#include "metalib.h"
 #include "components.h"
 
 #include "ui_main.h"
@@ -18,17 +19,22 @@
 #include "tests/testcase.h"
 #endif
 
+#define METADB_PATH "metalib.db"
+#define METADB_SQL "metadb.sql"
+
 SystemState SYSTEM_STATE;
 
 // DO NOT change priority
-__attribute__((constructor(0))) static void init()
+__attribute__((constructor(0))) static void oct_init()
 {
+    oct_ASSERT(!init_metalib(METADB_PATH, METADB_SQL), exit(1));
     init_component_system();
     init_texture_map();
 }
 
-__attribute__((destructor)) static void exit()
+__attribute__((destructor)) static void oct_exit()
 {
+    close_metalib();
     cleanup_component_system();
     cleanup_texture_map();
 }
@@ -74,6 +80,4 @@ int main()
         RENDER_UI_MAIN();
         EndDrawing();
     }
-
-    cleanup_component_system();
 }

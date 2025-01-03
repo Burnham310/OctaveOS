@@ -19,3 +19,5 @@
 
 #define COMPONENT_LOADING_ORDER 7
 #define COMPONENT_REGISTER_ORDER 5
+
+bool ensure_directory_exists(const char *dir);
