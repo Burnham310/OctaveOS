@@ -17,6 +17,5 @@
         }                      \
     } while (0)
 
-
 #define COMPONENT_LOADING_ORDER 7
 #define COMPONENT_REGISTER_ORDER 5

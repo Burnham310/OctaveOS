@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c,linux,vs
-# Edit at https://www.toptal.com/developers/gitignore?templates=c,linux,vs
+# Created by https://www.toptal.com/developers/gitignore/api/c,c++,vs,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=c,c++,vs,vim
 
 ### C ###
 # Prerequisites
@@ -55,20 +55,45 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-### Linux ###
+### C++ ###
+# Prerequisites
+
+# Compiled Object files
+*.slo
+
+# Precompiled Headers
+
+# Compiled Dynamic libraries
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+
+# Executables
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
 *~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
 
 ### vs ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -420,7 +445,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# End of https://www.toptal.com/developers/gitignore/api/c,linux,vs
+# End of https://www.toptal.com/developers/gitignore/api/c,c++,vs,vim
 
 
 # other
