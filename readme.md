@@ -1,11 +1,15 @@
-# Build
+# OctaveOS
+Music Player Operation System, build for love ❤
+
+![](docs/main_ui.png)
+
+# Build & Run
 ```
-cd raylib
-make
+make dependencies -j10
+make run
+```
 
-cd kissfft
-make
-
-../
+# Test
+```
 make test
 ```

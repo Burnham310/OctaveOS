@@ -5,7 +5,8 @@
             "${workspaceFolder}/components",
             "${workspaceFolder}/raylib",
             "${workspaceFolder}/kissfft",
-            "${workspaceFolder}/taglib/bindings/c"
+            "${workspaceFolder}/taglib/bindings/c",
+            "${workspaceFolder}/"
         ]
     },
     "configurations": [

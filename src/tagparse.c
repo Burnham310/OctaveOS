@@ -5,13 +5,16 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include "metalib.h"
+#include <pthread.h>
 
+#include "metalib.h"
+// #include "CONFIG.h"
 #include "tag_c.h"
 #include "utils.h"
 
 #define COVER_THUMBNAIL_DIR "cover_thumbnail"
 #define MAX_PATH_LENGTH 512
+
 
 int process_file(const char *file_path)
 {
@@ -92,26 +95,26 @@ void process_directory(const char *dir_path)
     closedir(dir);
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc != 2)
-    {
-        fprintf(stderr, "Usage: %s <directory_path>\n", argv[0]);
-        return EXIT_FAILURE;
-    }
+// int main(int argc, char *argv[])
+// {
+//     if (argc != 2)
+//     {
+//         fprintf(stderr, "Usage: %s <directory_path>\n", argv[0]);
+//         return EXIT_FAILURE;
+//     }
 
-    const char *dir_path = argv[1];
+//     const char *dir_path = argv[1];
 
-    ensure_directory_exists(COVER_THUMBNAIL_DIR);
+//     ensure_directory_exists(COVER_THUMBNAIL_DIR);
 
-    if (init_metalib("metalib.db", "metadb.sql") != 0)
-    {
-        fprintf(stderr, "Error: Failed to initialize metadata library\n");
-        return EXIT_FAILURE;
-    }
+//     if (init_metalib("metalib.db", "metadb.sql") != 0)
+//     {
+//         fprintf(stderr, "Error: Failed to initialize metadata library\n");
+//         return EXIT_FAILURE;
+//     }
 
-    process_directory(dir_path);
+//     process_directory(dir_path);
 
-    close_metalib();
-    return EXIT_SUCCESS;
-}
+//     close_metalib();
+//     return EXIT_SUCCESS;
+// }
